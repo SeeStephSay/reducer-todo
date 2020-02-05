@@ -1,4 +1,5 @@
 import React, { useReducer, useState } from 'react';
+import './Todo.css';
 import { reducer, initialState } from '../reducers/todoreducer';
 import { ADD_TODO, TOGGLE_COMPLETED, CLEAR_COMPLETED } from '../reducers/todoreducer';
 
@@ -37,9 +38,9 @@ function Todo() {
 	return (
 		<div className='search-text'>
 			<form>
-				<input value={formValue} onChange={onChange} type='text' />
+				<input value={formValue} onChange={onChange} type='text' placeholder='Enter to-do here' />
 				<button onClick={addTodo} type='submit'>
-					Enter
+					Add
 				</button>
 			</form>
 

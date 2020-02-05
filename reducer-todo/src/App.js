@@ -7,6 +7,7 @@ function App() {
 		<div className='App'>
 			<h1>Reducer To-Do</h1>
 			<Todo />
+			<h5>Tip: Click to-do item to mark it as completed.</h5>
 		</div>
 	);
 }
